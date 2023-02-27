@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ListProviderComponent } from './list-provider/list-provider.component';
 import { AddProviderComponent } from './add-provider/add-provider.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListProviderComponent,
     AddProviderComponent,
-    NavbarComponent
+    NavbarComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
