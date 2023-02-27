@@ -11,8 +11,11 @@ export class AddProviderComponent {
   constructor(private providerService: ProviderService){
 
   }
-  addProvider()
+
+  createProvider(providerform:any)
   {
+    console.log(providerform.value)
+    /*
     let provider={
       "name":"amine",
       "email":"amine.mezghich@gmail.com",
@@ -24,7 +27,7 @@ export class AddProviderComponent {
            alert("Provider Added !");
            console.log(data);
       }
-    );
+    );*/
 
   }
 
