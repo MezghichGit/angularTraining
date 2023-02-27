@@ -14,7 +14,9 @@ export class ProviderService {
   }
 
   //2) add provider
-  addProvider(provider:any) { }
+  addProvider(provider:any) {
+    return this.http.post("http://127.0.0.1:8080/providers/add",provider);
+   }
 
   //3) get provider
   getProvider(id:number) { }
