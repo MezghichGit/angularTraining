@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProviderService } from '../services/provider.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-add-provider',
   templateUrl: './add-provider.component.html',
@@ -8,26 +9,29 @@ import { ProviderService } from '../services/provider.service';
 export class AddProviderComponent {
 
 
-  constructor(private providerService: ProviderService){
+  constructor(private providerService: ProviderService, private router : Router){
 
   }
 
   createProvider(providerform:any)
   {
-    console.log(providerform.value)
-    /*
+    let nom = providerform.value.name;
+    let address = providerform.value.address;
+    let email = providerform.value.email;
+
     let provider={
-      "name":"amine",
-      "email":"amine.mezghich@gmail.com",
-      "address":"France"
+      "name":nom,
+      "email":email,
+      "address":address
     }
 
     this.providerService.addProvider(provider).subscribe(
       data=>{
            alert("Provider Added !");
            console.log(data);
+           this.router.navigate(['listProvider']);
       }
-    );*/
+    );
 
   }
 
