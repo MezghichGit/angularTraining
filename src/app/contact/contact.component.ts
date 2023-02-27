@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  createMessage(contactForm:any){
+
+    alert(contactForm.value.name+"\n"+contactForm.value.email+"\n"+contactForm.value.message);
+  }
+
 }

@@ -3,3 +3,26 @@
 Trainer : Mohamed Amine Mezghich
 <br>
 Email : amine.mezghich@gmail.com
+
+<form #contactForm="ngForm" (ngSubmit)="createMessage(contactForm)">
+  <div class="form-group">
+    <label for="contactname">Your name</label>
+    <input ngModel name="name" type="text" class="form-control" id="contactname" aria-describedby="emailHelp" placeholder="Enter name">
+  </div>
+
+
+  <div class="form-group">
+    <label for="contactemail">Your email</label>
+    <input  ngModel name="email" type="email" class="form-control" id="contactemail" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+  <div class="form-group">
+    <label for="contactmessage">Your message</label>
+    <textarea class="form-control" ngModel name="message" id="contactmessage" placeholder="Enter your message here">
+
+    </textarea>
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
