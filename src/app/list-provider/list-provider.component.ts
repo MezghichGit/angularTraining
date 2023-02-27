@@ -7,18 +7,31 @@ import { ProviderService } from '../services/provider.service';
 })
 export class ListProviderComponent {
 
-  providers:any;
+  providers: any;
   // injection de dependences : ProviderService
   constructor(private providerService: ProviderService) { }
 
   ngOnInit(): void {
-     this.providerService.getProviders().subscribe(
-      data =>{
+    this.refrech();
+  }
+
+
+  deleteProvider(id: any) {
+
+    this.providerService.deleteProvider(id).subscribe(
+      data => {
+        this.refrech();
+      }
+    );
+  }
+
+  refrech() {
+    this.providerService.getProviders().subscribe(
+      data => {
         this.providers = data;
         console.log(this.providers);
       }
-     );
+    );
   }
-
 
 }

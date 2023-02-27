@@ -22,7 +22,9 @@ export class ProviderService {
   getProvider(id:number) { }
 
   //4) add provider
-  deleteProvider(id:number) { }
+  deleteProvider(id:number) {
+    return this.http.delete("http://127.0.0.1:8080/providers/"+id);
+   }
 
   //5) add provider
   updateProvider(id:number, new_provider:any) { }
