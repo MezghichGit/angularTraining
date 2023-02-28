@@ -11,6 +11,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ContactComponent } from './contact/contact.component';
 import { DetailsProviderComponent } from './details-provider/details-provider.component';
 import { UpdateProviderComponent } from './update-provider/update-provider.component';
+import { MypipePipe } from './mypipe.pipe';
+import { EmailpipePipe } from './emailpipe.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { UpdateProviderComponent } from './update-provider/update-provider.compo
     NavbarComponent,
     ContactComponent,
     DetailsProviderComponent,
-    UpdateProviderComponent
+    UpdateProviderComponent,
+    MypipePipe,
+    EmailpipePipe
   ],
   imports: [
     BrowserModule,

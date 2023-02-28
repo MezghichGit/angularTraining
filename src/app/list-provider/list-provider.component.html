@@ -4,9 +4,9 @@
   <tr><th>ID</th><th>Name</th><th>Address</th><th>Email</th><th>Details</th><th>Update</th><th>Delete</th></tr>
   <tr *ngFor="let provider of providers">
     <td>{{provider.id}}</td>
-    <td>{{provider.name}}</td>
-    <td>{{provider.address}}</td>
-    <td>{{provider.email}}</td>
+    <td>{{provider.name | mypipe | uppercase}}</td>
+    <td>{{provider.address | uppercase}}</td>
+    <td>{{provider.email | emailpipe | uppercase}}</td>
     <td><a class="btn btn-primary" (click)="detailsProvider(provider.id)">Details</a></td>
     <td><a class="btn btn-warning" (click)="updateProvider(provider.id)">Update</a></td>
     <td><button class="btn btn-danger" (click)="deleteProvider(provider.id)">Delete</button></td>
