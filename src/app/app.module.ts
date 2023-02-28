@@ -15,6 +15,8 @@ import { MypipePipe } from './mypipe.pipe';
 import { EmailpipePipe } from './emailpipe.pipe';
 import { ListArticleComponent } from './list-article/list-article.component';
 import { AddArticleComponent } from './add-article/add-article.component';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { AddArticleComponent } from './add-article/add-article.component';
     MypipePipe,
     EmailpipePipe,
     ListArticleComponent,
-    AddArticleComponent
+    AddArticleComponent,
+    LoginComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
