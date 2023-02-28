@@ -10,7 +10,7 @@
     <td>{{article.provider.name}}</td>
     <td><a class="btn btn-primary" >Details</a></td>
     <td><a class="btn btn-warning" >Update</a></td>
-    <td><button class="btn btn-danger" >Delete</button></td>
+    <td><button class="btn btn-danger" (click)="deleteArticle(article.id)">Delete</button></td>
   </tr>
 </table>
 

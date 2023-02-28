@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DetailsProviderComponent } from './details-provider/details-provider.component';
 import { UpdateProviderComponent } from './update-provider/update-provider.component';
 import { ListArticleComponent } from './list-article/list-article.component';
+import { AddArticleComponent } from './add-article/add-article.component';
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "app-navbar" },
   { path: "listProvider", component: ListProviderComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: "detailsProvider/:id", component: DetailsProviderComponent },
   { path: "updateProvider/:id", component: UpdateProviderComponent },
   { path: "listArticle", component: ListArticleComponent },
+  { path: "addArticle", component: AddArticleComponent},
 ];
 
 @NgModule({

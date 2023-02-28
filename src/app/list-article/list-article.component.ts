@@ -26,4 +26,13 @@ export class ListArticleComponent {
     );
   }
 
+  deleteArticle(id: any) {
+
+    this. articleService.deleteArticle(id).subscribe(
+      data => {
+        this.refrech();
+      }
+    );
+  }
+
 }

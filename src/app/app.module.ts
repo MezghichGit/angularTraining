@@ -14,6 +14,7 @@ import { UpdateProviderComponent } from './update-provider/update-provider.compo
 import { MypipePipe } from './mypipe.pipe';
 import { EmailpipePipe } from './emailpipe.pipe';
 import { ListArticleComponent } from './list-article/list-article.component';
+import { AddArticleComponent } from './add-article/add-article.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ListArticleComponent } from './list-article/list-article.component';
     UpdateProviderComponent,
     MypipePipe,
     EmailpipePipe,
-    ListArticleComponent
+    ListArticleComponent,
+    AddArticleComponent
   ],
   imports: [
     BrowserModule,

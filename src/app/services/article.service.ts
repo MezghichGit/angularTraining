@@ -22,7 +22,7 @@ export class ArticleService {
 
   //3) delete Article
   deleteArticle(id: number) {
-    return this.http.delete(this.baseUrl + id);
+    return this.http.delete(this.baseUrl+"delete/" + id);
   }
 
 }
