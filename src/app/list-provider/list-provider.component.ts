@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ProviderService } from '../services/provider.service';
 @Component({
   selector: 'app-list-provider',
@@ -9,7 +10,7 @@ export class ListProviderComponent {
 
   providers: any;
   // injection de dependences : ProviderService
-  constructor(private providerService: ProviderService) { }
+  constructor(private providerService: ProviderService, private router : Router) { }
 
   ngOnInit(): void {
     this.refrech();
@@ -23,6 +24,9 @@ export class ListProviderComponent {
         this.refrech();
       }
     );
+  }
+  detailsProvider(id: any) {
+    this.router.navigate(['detailsProvider/'+id]);
   }
 
   refrech() {

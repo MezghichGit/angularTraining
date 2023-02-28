@@ -19,7 +19,10 @@ export class ProviderService {
    }
 
   //3) get provider
-  getProvider(id:number) { }
+  getProvider(id:number) {
+
+    return this.http.get("http://127.0.0.1:8080/providers/"+id);
+  }
 
   //4) add provider
   deleteProvider(id:number) {

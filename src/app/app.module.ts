@@ -9,6 +9,7 @@ import { ListProviderComponent } from './list-provider/list-provider.component';
 import { AddProviderComponent } from './add-provider/add-provider.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactComponent } from './contact/contact.component';
+import { DetailsProviderComponent } from './details-provider/details-provider.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     ListProviderComponent,
     AddProviderComponent,
     NavbarComponent,
-    ContactComponent
+    ContactComponent,
+    DetailsProviderComponent
   ],
   imports: [
     BrowserModule,
