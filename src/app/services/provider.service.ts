@@ -1,36 +1,39 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class ProviderService {
+
+  baseUrl = environment.urlprovider;
 
   // injection de dependences : HttpClient
   constructor(private http: HttpClient) { }
 
   //1)get Providers
   getProviders() {
-    return this.http.get("http://127.0.0.1:8080/providers/list");
+    return this.http.get(this.baseUrl+"list");
   }
 
   //2) add provider
   addProvider(provider:any) {
-    return this.http.post("http://127.0.0.1:8080/providers/add",provider);
+    return this.http.post(this.baseUrl+"add",provider);
    }
 
   //3) get provider
   getProvider(id:number) {
 
-    return this.http.get("http://127.0.0.1:8080/providers/"+id);
+    return this.http.get(this.baseUrl+id);
   }
 
   //4) add provider
   deleteProvider(id:number) {
-    return this.http.delete("http://127.0.0.1:8080/providers/"+id);
+    return this.http.delete(this.baseUrl+id);
    }
 
   //5) update provider
   updateProvider(id:number, new_provider:any) {
-    return this.http.put("http://127.0.0.1:8080/providers/"+ id, new_provider);
+    return this.http.put(this.baseUrl+ id, new_provider);
   }
 }
