@@ -25,4 +25,9 @@ export class ArticleService {
     return this.http.delete(this.baseUrl+"delete/" + id);
   }
 
+   //4) update Article
+   updateArticle(idProvider: number, idArticle:number, article:any) {
+    return this.http.put(this.baseUrl+"update/"+ idProvider+"/"+idArticle,article);
+  }
+
 }
