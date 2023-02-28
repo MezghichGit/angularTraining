@@ -13,6 +13,7 @@ import { DetailsProviderComponent } from './details-provider/details-provider.co
 import { UpdateProviderComponent } from './update-provider/update-provider.component';
 import { MypipePipe } from './mypipe.pipe';
 import { EmailpipePipe } from './emailpipe.pipe';
+import { ListArticleComponent } from './list-article/list-article.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EmailpipePipe } from './emailpipe.pipe';
     DetailsProviderComponent,
     UpdateProviderComponent,
     MypipePipe,
-    EmailpipePipe
+    EmailpipePipe,
+    ListArticleComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<h2 align="center">Liste des Articles</h2>
+
+<table align="center" border="1" class="table">
+  <tr  align="center"><th>ID</th><th>Photo</th><th>Label</th><th>Price</th><th>Provider</th><th>Details</th><th>Update</th><th>Delete</th></tr>
+  <tr *ngFor="let article of articles" align="center">
+    <td>{{article.id}}</td>
+    <td><img src="{{article.picture}}" width="100px"></td>
+    <td>{{article.label}}</td>
+    <td>{{article.price}}</td>
+    <td>{{article.provider.name}}</td>
+    <td><a class="btn btn-primary" >Details</a></td>
+    <td><a class="btn btn-warning" >Update</a></td>
+    <td><button class="btn btn-danger" >Delete</button></td>
+  </tr>
+</table>
+
