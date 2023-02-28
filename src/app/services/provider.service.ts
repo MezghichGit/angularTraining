@@ -29,6 +29,8 @@ export class ProviderService {
     return this.http.delete("http://127.0.0.1:8080/providers/"+id);
    }
 
-  //5) add provider
-  updateProvider(id:number, new_provider:any) { }
+  //5) update provider
+  updateProvider(id:number, new_provider:any) {
+    return this.http.put("http://127.0.0.1:8080/providers/"+ id, new_provider);
+  }
 }

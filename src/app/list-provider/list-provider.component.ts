@@ -29,6 +29,9 @@ export class ListProviderComponent {
     this.router.navigate(['detailsProvider/'+id]);
   }
 
+  updateProvider(id:any){
+    this.router.navigate(['updateProvider/'+id]);
+  }
   refrech() {
     this.providerService.getProviders().subscribe(
       data => {

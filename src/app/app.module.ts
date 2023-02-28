@@ -10,6 +10,7 @@ import { AddProviderComponent } from './add-provider/add-provider.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactComponent } from './contact/contact.component';
 import { DetailsProviderComponent } from './details-provider/details-provider.component';
+import { UpdateProviderComponent } from './update-provider/update-provider.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DetailsProviderComponent } from './details-provider/details-provider.co
     AddProviderComponent,
     NavbarComponent,
     ContactComponent,
-    DetailsProviderComponent
+    DetailsProviderComponent,
+    UpdateProviderComponent
   ],
   imports: [
     BrowserModule,

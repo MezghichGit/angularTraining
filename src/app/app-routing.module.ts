@@ -4,12 +4,14 @@ import { ListProviderComponent } from './list-provider/list-provider.component';
 import { AddProviderComponent } from './add-provider/add-provider.component';
 import { ContactComponent } from './contact/contact.component';
 import { DetailsProviderComponent } from './details-provider/details-provider.component';
+import { UpdateProviderComponent } from './update-provider/update-provider.component';
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "app-navbar" },
   { path: "listProvider", component: ListProviderComponent },
   { path: "addProvider", component: AddProviderComponent },
   { path: "contact", component: ContactComponent },
   { path: "detailsProvider/:id", component: DetailsProviderComponent },
+  { path: "updateProvider/:id", component: UpdateProviderComponent },
 ];
 
 @NgModule({
